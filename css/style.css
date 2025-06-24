@@ -12,13 +12,17 @@
     --transition: all 0.3s ease;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     color: var(--dark);
     background-color: #f5f7fa;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -193,6 +197,32 @@ header p {
     margin-top: 1rem;
 }
 
+/* Screenshots */
+.screenshot-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.screenshot {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 1rem 0;
+    border: 1px solid #eee;
+}
+
+.screenshot:hover {
+    transform: scale(1.02);
+}
+
+.screenshot-caption {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-top: 0.5rem;
+}
+
 /* Tips */
 .office-tips {
     margin: 3rem 0;
@@ -268,5 +298,9 @@ footer a:hover {
     .btn {
         display: block;
         width: 100%;
+    }
+    
+    .screenshot {
+        max-width: 90%;
     }
 }
